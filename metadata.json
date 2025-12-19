@@ -1,0 +1,7 @@
+{
+  "name": "Nidys Thai Van and Catering v1.3",
+  "description": "A dynamic restaurant menu application with a full Content Management System (CMS) for managing dual-layer menu images, themes, and AI-generated content.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
