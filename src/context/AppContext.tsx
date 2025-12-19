@@ -305,7 +305,7 @@ const theme = useMemo(() => {
 
     const grandSubtotal = eventDays.reduce((sum, day) => {
       const dayTotal = Object.entries(day.order).reduce((daySum, [itemId, qty]) => {
-        const item = menuData.flatMap((c) => c.items).find((i) => i.id === itemId);
+        const item = menuData?.flatMap((c) => c.items).find((i) => i.id === itemId);
         return daySum + (item ? item.price * qty : 0);
       }, 0);
       return sum + dayTotal;
